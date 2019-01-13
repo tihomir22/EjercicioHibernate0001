@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-ene-2019 11:51:36 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Asistenciamedica" table="asistenciamedica" catalog="seguros" optimistic-lock="version">
+        <id name="idAsistenciaMedica" type="java.lang.Integer">
+            <column name="IdAsistenciaMedica" />
+            <generator class="identity" />
+        </id>
+        <property name="idSeguro" type="java.lang.Integer">
+            <column name="IdSeguro" />
+        </property>
+        <property name="breveDescripcion" type="string">
+            <column name="breveDescripcion" />
+        </property>
+        <property name="lugar" type="string">
+            <column name="lugar" />
+        </property>
+        <property name="explicacion" type="string">
+            <column name="explicacion" length="65535" />
+        </property>
+        <property name="tipoAsistencia" type="string">
+            <column name="TipoAsistencia" length="50" />
+        </property>
+        <property name="fecha" type="date">
+            <column name="fecha" length="10" />
+        </property>
+        <property name="hora" type="time">
+            <column name="hora" length="8" />
+        </property>
+        <property name="importe" type="big_decimal">
+            <column name="importe" precision="10" />
+        </property>
+        <property name="idx" type="java.lang.Integer">
+            <column name="idx" />
+        </property>
+    </class>
+</hibernate-mapping>

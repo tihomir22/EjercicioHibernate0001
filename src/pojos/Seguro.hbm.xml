@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-ene-2019 11:51:36 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Seguro" table="seguro" catalog="seguros" optimistic-lock="version">
+        <id name="idSeguro" type="java.lang.Integer">
+            <column name="idSeguro" />
+            <generator class="identity" />
+        </id>
+        <property name="nif" type="string">
+            <column name="nif" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="nombre" />
+        </property>
+        <property name="ape1" type="string">
+            <column name="ape1" />
+        </property>
+        <property name="ape2" type="string">
+            <column name="ape2" />
+        </property>
+        <property name="edad" type="java.lang.Integer">
+            <column name="edad" />
+        </property>
+        <property name="sexo" type="java.lang.Integer">
+            <column name="sexo" />
+        </property>
+        <property name="casado" type="java.lang.Boolean">
+            <column name="casado" />
+        </property>
+        <property name="numHijos" type="java.lang.Integer">
+            <column name="numHijos" />
+        </property>
+        <property name="embarazada" type="java.lang.Boolean">
+            <column name="embarazada" />
+        </property>
+        <property name="oftalmologia" type="java.lang.Boolean">
+            <column name="oftalmologia" />
+        </property>
+        <property name="dental" type="java.lang.Boolean">
+            <column name="dental" />
+        </property>
+        <property name="fecundacionInVitro" type="java.lang.Boolean">
+            <column name="fecundacionInVitro" />
+        </property>
+        <property name="corazon" type="java.lang.Boolean">
+            <column name="corazon" />
+        </property>
+        <property name="estomacal" type="java.lang.Boolean">
+            <column name="estomacal" />
+        </property>
+        <property name="rinyones" type="java.lang.Boolean">
+            <column name="rinyones" />
+        </property>
+        <property name="alergia" type="java.lang.Boolean">
+            <column name="alergia" />
+        </property>
+        <property name="nombreAlergia" type="string">
+            <column name="nombreAlergia" />
+        </property>
+        <property name="fechaCreacion" type="timestamp">
+            <column name="fechaCreacion" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>
